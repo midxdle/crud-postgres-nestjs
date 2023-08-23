@@ -6,6 +6,6 @@ export default registerAs('PG', () => ({
   USERNAME: process.env.PG_USERNAME,
   PASSWORD: process.env.PG_PASSWORD,
   DATABASE: process.env.PG_DATABASE,
-  SYNC: Boolean(process.env.PG_SYNC),
-  LOG: Boolean(process.env.PG_LOG),
+  SYNC: process.env.PG_SYNC,
+  LOG: process.env.PG_LOG,
 }));
